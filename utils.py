@@ -57,7 +57,7 @@ def display_image_notebook(img_dir):
     def show_frame(idx):
         display(images[idx])
 
-    slider = IntSlider(value=0, min=0, max=len(images)-1, step=1, description="Frame")
+    slider = IntSlider(value=0, min=0, max=len(images)-1, step=1, description="Step")
     interact(show_frame, idx=slider)
 
 def create_bouncing_gif(img_dir, save_gif="animation.gif", fps=30, pause_time=1.5):
